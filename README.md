@@ -1,41 +1,36 @@
-# eFarm: Streamlining Agriculture Operations
+# efarm Django Project
 ![GitHub top language](https://img.shields.io/github/languages/top/peter-evance/demo-efarm)
 ![GitHub last commit](https://img.shields.io/github/last-commit/peter-evance/demo-efarm)
 ![GitHub repo size](https://img.shields.io/github/repo-size/peter-evance/demo-efarm)
 
-eFarm is a comprehensive Django-Angular project designed to enhance farming operations through digital solutions. The platform focuses on precision agriculture, providing tailored apps for different sectors - Dairy, Poultry, and soon Swine.
-
 ## Introduction
 
-eFarm aims to revolutionize farming by offering an integrated digital platform. With dedicated apps for Dairy, Poultry, and upcoming Swine sector, the project facilitates efficient data management and operation optimization.
+efarm is a Django project designed to help farmers streamline their operations by providing a digital platform for precision agriculture. The project consists of three apps mainly - Dairy, Poultry, and Swine. Each app has different models for managing data relevant to that sector of agriculture.
 
-## Getting Started
+## Installation
 
-Please note that the frontend development is currently paused until the backend is completed for at least the Dairy and Poultry sectors.
-
-### Backend (Django)
-
-1. Clone the repository: `git clone https://github.com/peter-evance/demo-efarm.git`.
-2. Navigate to the project directory: `cd efarm`.
-3. Create a virtual environment: `python3 -m venv env`.
-4. Activate the virtual environment:
-   - On Linux/macOS: `source env/bin/activate`
-   - On Windows: `.\env\Scripts\activate`
-5. Install dependencies: `pip install -r requirements.txt`.
-6. Run migrations: `python manage.py migrate`.
-7. Start the development server: `python manage.py runserver`.
-
-### Frontend (Angular)
-
-Frontend development is temporarily paused until the backend for Dairy and Poultry sectors is completed.
+1. Clone the repository using `git clone https://github.com/peter-evance/demo-efarm.git`.
+2. Change into the `efarm` directory using `cd efarm`.
+3. Create a virtual environment using `python3 -m venv env`.
+4. Activate the virtual environment using `source env/bin/activate` on Linux/macOS or `.\env\Scripts\activate` on Windows.
+5. Install the dependencies using `pip install -r requirements.txt`.
+6. Run migrations using `python manage.py migrate`.
+7. Start the development server using `python manage.py runserver`.
+8. Run the `python manage.py createsuperuser` and create a superuser of you own liking, you can use database you find in this repository.
 
 ## Usage
 
-Once the Django development server is running, access the eFarm app at `http://localhost:8000/`. You can explore the various apps and models to manage and view data relevant to your farm operations.
+Once the development server is running, you can access the efarm app on `http://localhost:8000/`. From here, you can navigate to the different apps and models to view and manage data relevant to your farm.
 
 ## Feedback
 
-I greatly appreciate your feedback on how we can further enhance the eFarm project. Feel free to share your thoughts and suggestions with me.
+I value your feedback on how we can improve the efarm project.
 
----
-For more information, please visit my [YouTube channel](https://www.youtube.com/@peterevance), where tutorials and updates are regularly shared.
+## Contributing
+
+I welcome contributions to the efarm project. Please read [contribution guidelines](CONTRIBUTING.md) before submitting a pull request.
+
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
