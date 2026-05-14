@@ -1,2 +1,7 @@
 .DS_Store
 .idea
+efarm-backend/CONTRIBUTING.md
+efarm-backend/db.sqlit3
+efarm-backend/LICENSE
+efarm-env
+*__pycache__*
