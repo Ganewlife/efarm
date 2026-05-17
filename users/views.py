@@ -49,9 +49,21 @@ class AssignFarmOwnerView(APIView):
     permission_classes = [IsFarmOwner]
 
     def post(self, request):
-        user_ids = request.data.getlist('user_ids', [])
-        current_user_id = request.user.id
+        """ user_ids = request.data.getlist('user_ids', [])
+        current_user_id = request.user.id """
+        data = request.data
 
+        # request.data est un dict (JSON) — pas un QueryDict
+        user_id = data.get('user_id')
+        user_ids = data.get('user_ids', [])
+
+        # Normaliser en liste
+        if user_id is not None:
+            user_ids = [user_id]
+        elif not isinstance(user_ids, list):
+            user_ids = [user_ids]
+
+        current_user_id = request.user.id
         assigned_users = []
         not_found_ids = []
         invalid_ids = []
